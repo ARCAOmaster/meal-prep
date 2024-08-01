@@ -1,0 +1,165 @@
+body{
+    padding:2rem;
+    background-color:#EEEFEA ;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem;
+    margin: 1rem;
+    padding: 0 7rem;
+}
+strong{
+    font-weight: 900;
+    color:#213b0e
+}
+header img {
+    width: 10vw;
+    min-width: 10rem;
+}
+
+h1{
+    font-size: 44pt;
+}
+
+h2{
+    font-size: 36pt;
+    padding: 0 15rem;
+}
+
+h3{
+    font-size: 32pt;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color:#294911 ;
+    margin: 1rem;
+}
+
+main{
+    display: flex;
+    margin-top: 2rem;
+    align-items: center;
+    padding: 0 10rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li span {
+    font-size: 26pt;
+    margin: 1rem;
+}
+
+li{
+    margin: 1rem;
+}
+.carousel img {
+    border-radius: 50%;
+    width: 20%
+}
+
+.carousel{
+    display: flex;
+    justify-content: space-around;
+    margin:2rem;
+}
+
+main > :nth-child(1) {
+    width: 100vw;
+}
+
+main > :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+a {
+    text-decoration: none;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    background-color: #42C859;
+    border-radius: 30rem;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    color: #FFFEFE;
+    font-size: 28pt;
+    cursor: pointer;
+}
+
+a:hover{
+    background-color: #25D366;
+}
+
+@media (max-width: 768px)  {
+    body{
+        padding:0rem;
+    }
+    header, .carousel, main{
+        flex-direction: column;
+        align-items: center;
+        gap:1rem;
+    }
+
+    .carousel img {
+        width: 50%
+    }
+
+    li{
+        margin:2rem;
+    }
+
+    h2 {
+        padding: 0;
+        font-size: 28pt;
+    }
+    h1{
+        font-size: 36pt;
+    }
+    h3{
+        font-size: 24pt;
+    }
+
+    main{
+        margin-top: 0.5rem;
+        padding: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1290px){
+    body{
+        padding:1rem;
+    }
+    h2 {
+        padding: 0  5rem;
+        font-size: 30pt;
+    }
+    h1{
+        font-size: 32pt;
+    }
+    h3{
+        font-size: 28pt;
+    }
+
+    main{
+        flex-direction: column;
+        align-items: center;
+        gap:1rem;
+        margin-top: 1rem;
+        padding: 0 5rem;
+    }
+
+    main > :nth-child(1) {
+        width: 80vw;
+        padding: 0 5rem;
+    }
+
+    main > :nth-child(2) {
+        padding: 2rem 5rem;
+    }
+}
